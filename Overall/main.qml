@@ -8,8 +8,8 @@ import "View"
 Window {
     id: root;
     visible: true
-    width: 480
-    height: 800
+    width: 1280
+    height: 720
     title: qsTr("ExamplesOcerall")
 
     FontLoader {
@@ -18,9 +18,13 @@ Window {
      }
 
     property Component splitViewEg: SplitViewEg{}
+    property Component swipeViewEg: SwipeViewEg{}
+    property Component stackViewEg: StackViewEg{}
 
     property var componentMap: {
-        "SplitViewEg": splitViewEg
+        "SplitViewEg": splitViewEg,
+        "SwipeViewEg": swipeViewEg,
+        "StackViewEg": stackViewEg
     };
 
     StackView {
@@ -29,8 +33,8 @@ Window {
         initialItem: ListView {
             model: ListModel {
                 ListElement { title: "SplitViewEg"; }
-                ListElement { title: "CircularGauge1"; }
-                ListElement { title: "CircularGauge2"; }
+                ListElement { title: "SwipeViewEg"; }
+                ListElement { title: "StackViewEg"; }
                 ListElement { title: "CircularGauge3"; }
                 ListElement { title: "CircularGauge4"; }
                 ListElement { title: "CircularGauge5"; }

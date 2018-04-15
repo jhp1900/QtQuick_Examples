@@ -6,5 +6,7 @@
         <file>images/icon-back.png</file>
         <file>images/icon-go.png</file>
         <file>fonts/OpenSans-Regular.ttf</file>
+        <file>View/SwipeViewEg.qml</file>
+        <file>View/StackViewEg.qml</file>
     </qresource>
 </RCC>
